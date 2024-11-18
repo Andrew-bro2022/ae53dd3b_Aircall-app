@@ -1,0 +1,84 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 376px;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  padding: 0 10px;
+}
+
+.bottom-nav .nav-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.bottom-nav .nav-button:hover {
+  opacity: 0.8;
+}
+
+.bottom-nav .nav-button.center {
+  margin-bottom: 20px;
+}
+
+.center-button {
+  width: 56px;
+  height: 56px;
+  background: #2AC420;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.nav-button.center:hover .center-button {
+  transform: scale(1.05);
+}
+
+.notification-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #f44336;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #2AC420;
+  border-radius: 50%;
+}
+
+.nav-button svg {
+  transition: transform 0.2s ease;
+}
+
+.nav-button:hover svg {
+  transform: scale(1.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 376px) {
+  .bottom-nav {
+    width: 100%;
+  }
+}

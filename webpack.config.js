@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   module: {
@@ -24,6 +25,12 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    alias: {
+      'react': path.resolve('./node_modules/react')
+    }
   },
   plugins: [
     new HtmlWebPackPlugin({
